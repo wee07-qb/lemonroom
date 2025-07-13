@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lemon Shop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="browserWarning" style="display: none; text-align: center; margin-top:50px;">
+    <h2>💚 เปิดหน้านี้ในเบราว์เซอร์</h2>
+    <p>เพื่อเข้าสู่ Shopee อย่างปลอดภัยและเร็วที่สุด</p>
+    <button id="openInBrowser" class="btn btn-success">📲 เปิดใน Chrome หรือเบราว์เซอร์</button>
+
+    <p id="iosNote" style="display: none; color: gray; margin-top: 15px;">
+      ❗ ถ้าปุ่มไม่ทำงาน ให้กด ⋮ หรือ … มุมขวาบน แล้วเลือก “เปิดในเบราว์เซอร์”
+    </p>
+  </div>
+
+  <nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">🍋 Lemon Shop</a>
+      <form class="d-flex ms-auto" role="search" oninput="filterCards()">
+        <input class="form-control me-2" style="width: 150px;" type="search" placeholder="ค้นหาสินค้า..." />
+        <button class="btn btn-outline-secondary" type="submit" >ค้นหา</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+      <!-- การ์ดสินค้า -->
+      <div class="col" data-title="001">
+        <div class="card position-relative shadow-sm">
+          <img src="image/hot-sale.png" alt="" id="hot-sale">
+          <img src="image/room1.jpg" class="card-img-top" alt="สินค้า">
+          <div class="card-body">
+            <h5 class="card-title">ห้องนอนโทนขาวดำ🖤</h5>
+            <p class="card-text text-muted">แต่งห้องให้เหมือนมุมโปรดในโรงแรม ด้วยเฟอร์นิเจอร์โทนโมโนโครมไฟ...</p>
+            <a href="room1.html" class="btn btn-custom w-100 rounded-pill">ดูสินค้า</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- เพิ่มการ์ดอื่นๆ ตามต้องการ -->
+      <div class="col">
+        <div class="card position-relative shadow-sm">
+          <img src="image/comingsoon.png" class="card-img-top" alt="สินค้า">
+          <div class="card-body">
+            <h5 class="card-title">หมวกแฟชั่นเกาหลี</h5>
+            <p class="card-text text-muted">ใส่เที่ยว ใส่ถ่ายรูป เพิ่มลุคคูล</p>
+            <a href="#" class="btn btn-custom w-100 rounded-pill">ดูสินค้า</a>
+          </div>
+        </div>
+      </div>
+      <!-- เพิ่มการ์ดอื่นๆ ตามต้องการ -->
+      <div class="col">
+        <div class="card position-relative shadow-sm">
+          <img src="image/comingsoon.png" class="card-img-top" alt="สินค้า">
+          <div class="card-body">
+            <h5 class="card-title">หมวกแฟชั่นเกาหลี</h5>
+            <p class="card-text text-muted">ใส่เที่ยว ใส่ถ่ายรูป เพิ่มลุคคูล</p>
+            <a href="#" class="btn btn-custom w-100 rounded-pill">ดูสินค้า</a>
+          </div>
+        </div>
+      </div>
+      <!-- เพิ่มการ์ดอื่นๆ ตามต้องการ -->
+      <div class="col">
+        <div class="card position-relative shadow-sm">
+          <img src="image/comingsoon.png" class="card-img-top" alt="สินค้า">
+          <div class="card-body">
+            <h5 class="card-title">หมวกแฟชั่นเกาหลี</h5>
+            <p class="card-text text-muted">ใส่เที่ยว ใส่ถ่ายรูป เพิ่มลุคคูล</p>
+            <a href="#" class="btn btn-custom w-100 rounded-pill">ดูสินค้า</a>
+          </div>
+        </div>
+      </div>
+      <!-- เพิ่มการ์ดอื่นๆ ตามต้องการ -->
+      <div class="col">
+        <div class="card position-relative shadow-sm">
+          <img src="image/comingsoon.png" class="card-img-top" alt="สินค้า">
+          <div class="card-body">
+            <h5 class="card-title">หมวกแฟชั่นเกาหลี</h5>
+            <p class="card-text text-muted">ใส่เที่ยว ใส่ถ่ายรูป เพิ่มลุคคูล</p>
+            <a href="#" class="btn btn-custom w-100 rounded-pill">ดูสินค้า</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
