@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>สินค้าแต่งห้องมินิมอล</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<style>
+    .col img{
+        height: 500px;
+    }
+</style>
+
+<body class="bg-light">
+
+      <div id="browserWarning" style="display: none; text-align: center; margin-top:50px;">
+    <h2>💚 เปิดหน้านี้ในเบราว์เซอร์</h2>
+    <p>เพื่อเข้าสู่ Shopee อย่างปลอดภัยและเร็วที่สุด</p>
+    <button id="openInBrowser" class="btn btn-success">📲 เปิดใน Chrome หรือเบราว์เซอร์</button>
+
+    <p id="iosNote" style="display: none; color: gray; margin-top: 15px;">
+      ❗ ถ้าปุ่มไม่ทำงาน ให้กด ⋮ หรือ … มุมขวาบน แล้วเลือก “เปิดในเบราว์เซอร์”
+    </p>
+  </div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">🛍️ สินค้า</a>
+  </div>
+</nav>
+
+<!-- Carousel -->
+ <div class="container-card">
+    <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+  <div class="carousel-inner" >
+    <div class="carousel-item active">
+      <img src="image/room3-3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="image/room3-2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="image/room3-3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+ </div>
+
+ <br>
+
+
+
+  <div class="container py-4">
+    <h2 class="text-center mb-4 fw-bold">🛋️ รวมไอเทมแต่งห้องสไตล์มินิมอล</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+
+      <!-- 1: พรม LOW BATTERY -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/product3/1.png" class="card-img-top" alt="พรม LOW BATTERY">
+          <div class="card-body">
+            <h5 class="card-title">พรม “5% LOW BATTERY”</h5>
+            <p class="card-text">พรมดีไซน์เก๋ วางปลายเตียงหรือหน้าประตู เพิ่มความเท่ให้ห้องแบบมีสไตล์</p>
+            <a href="https://s.shopee.co.th/4AouDjJOjp" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2: ผ้าห่ม + หมอนเทา -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/product3/2.png" class="card-img-top" alt="ผ้าห่มหมอนโทนเทา">
+          <div class="card-body">
+            <h5 class="card-title">ผ้าห่มสีเทาเข้ม + หมอนโทนเทา</h5>
+            <p class="card-text">ให้ความรู้สึกอบอุ่น นุ่มสบาย เพิ่มความผ่อนคลายให้มุมพักผ่อนของคุณ</p>
+            <a href="https://s.shopee.co.th/BIlSVTXPg" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3: โต๊ะทำงานดำมินิมอล -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/product3/3.png" class="card-img-top" alt="โต๊ะทำงานสีดำมินิมอล">
+          <div class="card-body">
+            <h5 class="card-title">โต๊ะทำงานสีดำมินิมอล</h5>
+            <p class="card-text">เข้ากับผนังขาวแบบลงตัว เรียบง่าย วางคอมก็สวย ถ่ายรูปก็ปัง</p>
+            <a href="https://s.shopee.co.th/6AZybZkrR9" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4: โคมไฟตั้งโต๊ะสีดำ -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/product3/4.png" class="card-img-top" alt="โคมไฟตั้งโต๊ะสีดำ">
+          <div class="card-body">
+            <h5 class="card-title">โคมไฟตั้งโต๊ะสีดำ</h5>
+            <p class="card-text">แสงอุ่นละมุน สบายตา เหมาะกับทุกโต๊ะทำงานหรือหัวเตียง</p>
+            <a href="https://s.shopee.co.th/50O1DSxIHK" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5: เก้าอี้ใสพับได้ -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/product3/5.png" class="card-img-top" alt="เก้าอี้ใสพับได้">
+          <div class="card-body">
+            <h5 class="card-title">เก้าอี้ใสพับได้</h5>
+            <p class="card-text">เบา เรียบ ดูดี พับเก็บได้ ประหยัดพื้นที่ เหมาะกับทุกห้อง</p>
+            <a href="https://s.shopee.co.th/2qJWdXGMQr" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6: นาฬิกาดิจิทัล -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/product3/6.png" class="card-img-top" alt="นาฬิกาดิจิทัล">
+          <div class="card-body">
+            <h5 class="card-title">นาฬิกาดิจิทัล</h5>
+            <p class="card-text">ตัวเลขใหญ่ เห็นชัด แม้ตอนกลางคืน มีฟังก์ชันหลากหลาย</p>
+            <a href="https://s.shopee.co.th/4AouE0ub3t" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7: โปสเตอร์ขาวดำ -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/product3/7.png" class="card-img-top" alt="โปสเตอร์สไตล์ขาวดำ">
+          <div class="card-body">
+            <h5 class="card-title">โปสเตอร์ศิลป์ขาวดำ</h5>
+            <p class="card-text">เติมกลิ่นอายอาร์ตให้ผนังห้อง ดูแพงแบบไม่ต้องเยอะ</p>
+            <a href="https://s.shopee.co.th/6fWFDJRaSu" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
