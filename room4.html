@@ -1,1 +1,186 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>สินค้าแต่งห้องมินิมอล</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<style>
+    .col img {
+        height: 500px;
+        object-fit: cover;
+    }
+</style>
+
+<body class="bg-light">
+
+  <div id="browserWarning" style="display: none; text-align: center; margin-top:50px;">
+    <h2>💚 เปิดหน้านี้ในเบราว์เซอร์</h2>
+    <p>เพื่อเข้าสู่ Shopee อย่างปลอดภัยและเร็วที่สุด</p>
+    <button id="openInBrowser" class="btn btn-success">📲 เปิดใน Chrome หรือเบราว์เซอร์</button>
+    <p id="iosNote" style="display: none; color: gray; margin-top: 15px;">
+      ❗ ถ้าปุ่มไม่ทำงาน ให้กด ⋮ หรือ … มุมขวาบน แล้วเลือก “เปิดในเบราว์เซอร์”
+    </p>
+  </div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">🛍️ สินค้า</a>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div class="container-card">
+  <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/room3-3.jpg" class="d-block w-100" alt="Cozy minimal bedroom">
+      </div>
+      <div class="carousel-item">
+        <img src="image/room3-2.jpg" class="d-block w-100" alt="Cozy minimal bedroom">
+      </div>
+      <div class="carousel-item">
+        <img src="image/room3-3.jpg" class="d-block w-100" alt="Cozy minimal bedroom">
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container py-4">
+  <h2 class="text-center mb-4 fw-bold">🛋️ รวมไอเทมแต่งห้องสไตล์มินิมอล</h2>
+
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+    <!-- 1: ผ้าปูที่นอนลายริ้วฟ้า-ขาว -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product3/1.png" class="card-img-top" alt="ผ้าปูที่นอนลายริ้วฟ้า-ขาว">
+        <div class="card-body">
+          <h5 class="card-title">ผ้าปูที่นอนลายริ้วฟ้า-ขาว</h5>
+          <p class="card-text">ลายคลีน ๆ นอนแล้วรู้สึกเหมือนอยู่โฮมสเตย์ญี่ปุ่น 🛏️</p>
+          <a href="https://s.shopee.co.th/50OAYogike" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2: หมอนหน้ายิ้มขนปุย -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product3/2.png" class="card-img-top" alt="หมอนหน้ายิ้มขนปุย">
+        <div class="card-body">
+          <h5 class="card-title">หมอนหน้ายิ้มขนปุย</h5>
+          <p class="card-text">เติมความน่ารักเล็ก ๆ ให้เตียงดูอบอุ่น 🧸</p>
+          <a href="https://s.shopee.co.th/1VoIPNOoTZ" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3: โคมไฟกระดาษแขวนเพดาน -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product3/3.png" class="card-img-top" alt="โคมไฟกระดาษแขวนเพดาน">
+        <div class="card-body">
+          <h5 class="card-title">โคมไฟกระดาษแขวนเพดาน</h5>
+          <p class="card-text">ไอเทมเพิ่มความ cozy แบบญี่ปุ่น 🎐</p>
+          <a href="https://s.shopee.co.th/4Ap3ZHjtRT" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4: โคมไฟหัวเตียงทรงเห็ด -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product3/4.png" class="card-img-top" alt="โคมไฟหัวเตียงทรงเห็ด">
+        <div class="card-body">
+          <h5 class="card-title">โคมไฟหัวเตียงทรงเห็ด</h5>
+          <p class="card-text">แสงนุ่ม ๆ เหมาะกับอ่านหนังสือก่อนนอน 🍄</p>
+          <a href="https://s.shopee.co.th/9UqZvihS6W" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5: กระดานแขวนสิ่งของ -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product3/5.png" class="card-img-top" alt="กระดานแขวนสิ่งของ">
+        <div class="card-body">
+          <h5 class="card-title">กระดานแขวนสิ่งของ</h5>
+          <p class="card-text">ดูเป็นระเบียบ ช่วยจัดระเบียบของใช้ในห้อง</p>
+          <a href="https://s.shopee.co.th/AUj77Yde4g" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6: เครื่องฟอกอากาศขนาดเล็ก -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product3/6.png" class="card-img-top" alt="เครื่องฟอกอากาศขนาดเล็ก">
+        <div class="card-body">
+          <h5 class="card-title">เครื่องฟอกอากาศขนาดเล็ก</h5>
+          <p class="card-text">ห้องสะอาด อากาศดี หลับสบายกว่าเดิม 🍃</p>
+          <a href="https://s.shopee.co.th/AKPgvFeHPf" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7: โต๊ะทำงานไม้โทนอุ่น -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product3/7.png" class="card-img-top" alt="โต๊ะทำงานไม้โทนอุ่น">
+        <div class="card-body">
+          <h5 class="card-title">โต๊ะทำงานไม้โทนอุ่น</h5>
+          <p class="card-text">เรียบง่ายแต่ดูดี นั่งทำงานแล้วไม่เครียด 🪵</p>
+          <a href="https://s.shopee.co.th/1g7ibgOB8c" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8: เก้าอี้ขาวมินิมอล + เบาะนุ่ม -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product3/8.png" class="card-img-top" alt="เก้าอี้ขาวมินิมอล">
+        <div class="card-body">
+          <h5 class="card-title">เก้าอี้ขาวมินิมอล + เบาะนุ่ม</h5>
+          <p class="card-text">รองรับหลังเวลานั่งนาน ๆ สบายและดูดี 🪑</p>
+          <a href="https://s.shopee.co.th/4VRtxticlV" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9: รถเข็นเก็บของ 3 ชั้น -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product3/9.png" class="card-img-top" alt="รถเข็นเก็บของ 3 ชั้น">
+        <div class="card-body">
+          <h5 class="card-title">รถเข็นเก็บของ 3 ชั้น</h5>
+          <p class="card-text">จัดระเบียบขวดครีม สกินแคร์ได้เรียบร้อย 🛒</p>
+          <a href="https://s.shopee.co.th/1LUsD4PRoW" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10: พรมผ้าสานโทนน้ำตาล -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product3/10.png" class="card-img-top" alt="พรมผ้าสานโทนน้ำตาล">
+        <div class="card-body">
+          <h5 class="card-title">พรมผ้าสานโทนน้ำตาล</h5>
+          <p class="card-text">เติม texture ให้ห้องดูมีมิติ นุ่มเท้าอีกด้วย 🧶</p>
+          <a href="https://s.shopee.co.th/40VdMykWmQ" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
