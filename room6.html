@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>สินค้าแต่งห้องมินิมอล</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bg-light">
+
+  <div id="browserWarning" style="display: none; text-align: center; margin-top:50px;">
+    <h2>💚 เปิดหน้านี้ในเบราว์เซอร์</h2>
+    <p>เพื่อเข้าสู่ Shopee อย่างปลอดภัยและเร็วที่สุด</p>
+    <button id="openInBrowser" class="btn btn-success">📲 เปิดใน Chrome หรือเบราว์เซอร์</button>
+    <p id="iosNote" style="display: none; color: gray; margin-top: 15px;">
+      ❗ ถ้าปุ่มไม่ทำงาน ให้กด ⋮ หรือ … มุมขวาบน แล้วเลือก “เปิดในเบราว์เซอร์”
+    </p>
+  </div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">🛍️ สินค้า</a>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div class="container-card">
+  <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/product5/room3.jpeg" class="d-block w-100" alt="Cozy minimal bedroom">
+      </div>
+      <div class="carousel-item">
+        <img src="image/product5/room2.jpeg" class="d-block w-100" alt="Cozy minimal bedroom">
+      </div>
+      <div class="carousel-item">
+        <img src="image/product5/room1.jpeg" class="d-block w-100" alt="Cozy minimal bedroom">
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container py-4">
+  <h2 class="text-center mb-4 fw-bold">🛋️ รวมไอเทมแต่งห้องสไตล์มินิมอล</h2>
+
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+    <!-- 1: ชุดเครื่องนอนโทนเทาครีม -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product5/1.jpg" class="card-img-top" alt="ชุดเครื่องนอนโทนเทาครีม">
+        <div class="card-body">
+          <h5 class="card-title">ชุดเครื่องนอนโทนเทาครีม</h5>
+          <p class="card-text">ผ้านิ่มสบาย สร้างความอบอุ่นให้ห้อง 🛏️</p>
+          <a href="https://s.shopee.co.th/9zms47H1PG" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2: เก้าอี้ไม้หวายสานสไตล์เรโทร -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product5/2.jpg" class="card-img-top" alt="เก้าอี้ไม้หวายสานสไตล์เรโทร">
+        <div class="card-body">
+          <h5 class="card-title">เก้าอี้ไม้หวายสานสไตล์เรโทร</h5>
+          <p class="card-text">ดูวินเทจแต่โมเดิร์น เหมาะกับมุมอ่านหนังสือ 🪑</p>
+          <a href="https://s.shopee.co.th/AUj8f2F7OL" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3: โต๊ะทำงานไม้โอ๊คขาเหล็กดำ -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product5/3.jpg" class="card-img-top" alt="โต๊ะทำงานไม้โอ๊คขาเหล็กดำ">
+        <div class="card-body">
+          <h5 class="card-title">โต๊ะทำงานไม้โอ๊คขาเหล็กดำ</h5>
+          <p class="card-text">เรียบหรู เหมาะกับ WFH หรือเขียนบันทึก 💻</p>
+          <a href="https://s.shopee.co.th/AKPiSjFkjI" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4: โคมไฟอ่านหนังสือแบบหนีบ -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product5/4.jpg" class="card-img-top" alt="โคมไฟอ่านหนังสือแบบหนีบ">
+        <div class="card-body">
+          <h5 class="card-title">โคมไฟอ่านหนังสือแบบหนีบ</h5>
+          <p class="card-text">แสงส่องนุ่ม ปรับองศาได้ตามใจ 💡</p>
+          <a href="https://s.shopee.co.th/8ALDskO07r" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5: กรอบรูปไม้โทนน้ำตาลอ่อน -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product5/5.jpg" class="card-img-top" alt="กรอบรูปไม้โทนน้ำตาลอ่อน">
+        <div class="card-body">
+          <h5 class="card-title">กรอบรูปไม้โทนน้ำตาลอ่อน</h5>
+          <p class="card-text">เพิ่มความเป็นธรรมชาติให้ผนังห้อง 🖼️</p>
+          <a href="https://s.shopee.co.th/801ngROdSo" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6: ต้นไผ่หลากใบในแจกันใส -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product5/6.jpg" class="card-img-top" alt="ต้นไผ่หลากใบในแจกันใส">
+        <div class="card-body">
+          <h5 class="card-title">ต้นไผ่หลากใบในแจกันใส</h5>
+          <p class="card-text">เพิ่มความสดใสให้ห้องดูมีชีวิต 🌿</p>
+          <a href="https://s.shopee.co.th/3AwXvi3f2T" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7: ผีเสื้อประดับ 3D สีพาสเทล -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product5/7.jpg" class="card-img-top" alt="ผีเสื้อประดับ 3D สีพาสเทล">
+        <div class="card-body">
+          <h5 class="card-title">ผีเสื้อประดับ 3D สีพาสเทล</h5>
+          <p class="card-text">สร้างมิติให้ผนัง ดูละมุนและมีเรื่องราว 🦋</p>
+          <a href="https://s.shopee.co.th/30d7jP4INQ" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8: ตู้ลิ้นชักขาวมินิมอล 4 ชั้น -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product5/8.jpg" class="card-img-top" alt="ตู้ลิ้นชักขาวมินิมอล 4 ชั้น">
+        <div class="card-body">
+          <h5 class="card-title">ตู้ลิ้นชักขาวมินิมอล 4 ชั้น</h5>
+          <p class="card-text">เก็บของให้เป็นระเบียบ มินิมอลสุด ๆ 🗄️</p>
+          <a href="https://s.shopee.co.th/3VZOKK2OMV" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9: พรมปูพื้นผ้ากระสอบ -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product5/9.jpg" class="card-img-top" alt="พรมปูพื้นผ้ากระสอบ">
+        <div class="card-body">
+          <h5 class="card-title">พรมปูพื้นผ้ากระสอบ</h5>
+          <p class="card-text">เนื้อหยาบดูเป็นธรรมชาติ เติม texture ให้ห้อง 🧧</p>
+          <a href="https://s.shopee.co.th/3LFy8131hS" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10: กระเป๋าผ้าลายสก็อตแขวนประตู -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product5/10.jpg" class="card-img-top" alt="กระเป๋าผ้าลายสก็อตแขวนประตู">
+        <div class="card-body">
+          <h5 class="card-title">กระเป๋าผ้าลายสก็อตแขวนประตู</h5>
+          <p class="card-text">ใส่ของใช้ได้ ประดับได้ น่ารักน่าใช้ 👜</p>
+          <a href="https://s.shopee.co.th/3qCEiw17gX" target="_blank" class="btn btn-dark w-100">🛒 สั่งซื้อ</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
