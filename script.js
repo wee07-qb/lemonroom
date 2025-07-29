@@ -67,10 +67,12 @@
 
     const randomLink = links[Math.floor(Math.random() * links.length)];
 
+    
     setTimeout(() => {
-      window.open(randomLink, "_blank");
-    }, 2000);
+      window.location.href = randomLink;
+    }, 4000);
   }
+
 
   // เรียกตอนโหลดหน้า
   window.addEventListener("load", () => {
