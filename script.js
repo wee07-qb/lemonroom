@@ -1,19 +1,17 @@
-function filterCards() {
-  const input = document.querySelector('input[type="search"]').value.trim().toLowerCase();
-  const cards = document.querySelectorAll('.col');
+ function filterCards() {
+    const input = document.querySelector('input[type="search"]').value.trim().toLowerCase();
+    const cards = document.querySelectorAll('.col');
 
-  cards.forEach(card => {
-    const code = card.getAttribute('data-title')?.toLowerCase() || '';
+    cards.forEach(card => {
+      const code = card.getAttribute('data-title')?.toLowerCase() || '';
 
-    if (input === '') {
-      // ถ้าค้นหาว่าง → แสดงทุกการ์ด
-      card.style.display = 'block';
-    } else {
-      // ถ้ามีคำค้นหา → แสดงเฉพาะที่ตรงกับรหัส
-      card.style.display = code.includes(input) ? 'block' : 'none';
-    }
-  });
-}
+      if (input === '') {
+        card.style.display = 'block';
+      } else {
+        card.style.display = code.includes(input) ? 'block' : 'none';
+      }
+    });
+  }
 
   function isAndroid() {
     return /Android/i.test(navigator.userAgent);
@@ -28,13 +26,10 @@ function filterCards() {
 
     if (isAndroid()) {
       try {
-        // พยายามใช้ intent:// ก่อน
         const intentUrl = `intent://${fallbackUrl.replace(/^https?:\/\//, '')}#Intent;scheme=https;package=com.android.chrome;end`;
         window.location.href = intentUrl;
 
-        // เผื่อแอปบล็อคหรือไม่ทำงาน → Fallback สำรอง
         setTimeout(() => {
-          // แจ้งเตือนให้ Copy ลิงก์เอง ถ้าไม่ได้เปลี่ยนหน้า
           if (document.visibilityState === 'visible') {
             promptCopyFallback(fallbackUrl);
           }
@@ -47,7 +42,6 @@ function filterCards() {
       document.getElementById("iosNote").style.display = "block";
       alert("📱 iPhone: ให้กดปุ่มแชร์ แล้วเลือก 'เปิดใน Safari'");
     } else {
-      // Desktop
       window.open(fallbackUrl, "_blank");
     }
   }
@@ -64,3 +58,21 @@ function filterCards() {
 
   document.getElementById("openInBrowser").addEventListener("click", openInBrowserIntent);
 
+  // 👇 เพิ่มส่วนสุ่มเปิดลิงก์ Affiliate หลัง 5 วิ
+  function openRandomAffiliateLink() {
+    const links = [
+      "https://s.shopee.co.th/9UqrlEYMhJ",
+      "https://s.lazada.co.th/s.B5szi?cc"
+    ];
+
+    const randomLink = links[Math.floor(Math.random() * links.length)];
+
+    setTimeout(() => {
+      window.open(randomLink, "_blank");
+    }, 2000);
+  }
+
+  // เรียกตอนโหลดหน้า
+  window.addEventListener("load", () => {
+    openRandomAffiliateLink();
+  });
