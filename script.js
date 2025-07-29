@@ -1,4 +1,4 @@
- function filterCards() {
+function filterCards() {
     const input = document.querySelector('input[type="search"]').value.trim().toLowerCase();
     const cards = document.querySelectorAll('.col');
 
@@ -58,23 +58,34 @@
 
   document.getElementById("openInBrowser").addEventListener("click", openInBrowserIntent);
 
-  // 👇 เพิ่มส่วนสุ่มเปิดลิงก์ Affiliate หลัง 5 วิ
-  function openRandomAffiliateLink() {
+  // 👇 ส่วนสุ่มลิงก์ Affiliate และเด้งในแท็บเดิม (ทุก 5 นาทีเท่านั้น)
+  function getRandomAffiliateLink() {
     const links = [
       "https://s.shopee.co.th/9UqrlEYMhJ",
       "https://s.lazada.co.th/s.B5szi?cc"
     ];
-
-    const randomLink = links[Math.floor(Math.random() * links.length)];
-
-    
-    setTimeout(() => {
-      window.location.href = randomLink;
-    }, 4000);
+    return links[Math.floor(Math.random() * links.length)];
   }
 
+  function redirectAffiliate() {
+    const link = getRandomAffiliateLink();
+    window.location.href = link;
+  }
 
-  // เรียกตอนโหลดหน้า
+  function handleAffiliateRedirect() {
+    const now = Date.now();
+    const lastRedirect = localStorage.getItem("lastAffiliateRedirect");
+
+    // ถ้ายังไม่เคยเด้ง หรือผ่านมาเกิน 5 นาที
+    if (!lastRedirect || now - parseInt(lastRedirect) >= 5 * 60 * 1000) {
+      setTimeout(() => {
+        redirectAffiliate();
+        localStorage.setItem("lastAffiliateRedirect", Date.now().toString());
+      }, 2500); // หน่วง 4 วินาทีก่อนเด้ง
+    }
+  }
+
+  // เรียกเมื่อโหลดหน้า
   window.addEventListener("load", () => {
-    openRandomAffiliateLink();
+    handleAffiliateRedirect();
   });
