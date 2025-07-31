@@ -61,8 +61,7 @@ function filterCards() {
   // 👇 ส่วนสุ่มลิงก์ Affiliate และเด้งในแท็บเดิม (ทุก 5 นาทีเท่านั้น)
   function getRandomAffiliateLink() {
     const links = [
-      "https://s.shopee.co.th/9UqrlEYMhJ",
-      "https://s.lazada.co.th/s.B5szi?cc"
+      "https://s.shopee.co.th/9UqrlEYMhJ"
     ];
     return links[Math.floor(Math.random() * links.length)];
   }
